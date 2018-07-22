@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
             str << "#{word.capitalize!}"
           end
         end
-      final_str = "  #{str}"
+      final_str = "  #{str}: "
       supplies.each do |sup|
         if sup == supplies.last 
           str << "#{sup} "
