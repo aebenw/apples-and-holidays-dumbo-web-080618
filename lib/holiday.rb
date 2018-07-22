@@ -60,12 +60,12 @@ def all_supplies_in_holidays(holiday_hash)
      holiday.each do |hol, supplies|
        new = hol.to_s.split("_")
        new.each do |word|
-        if word == new[-1]
-          str << " #{word.capitalize!}: "
-        else
-          str << "    #{word.capitalize!}"
+          if word == new[-1]
+            str << " #{word.capitalize!}: "
+          else
+            str << "#{word.capitalize!}"
+          end
         end
-      end
       supplies.each do |sup|
         if sup == supplies.last 
           str << "#{sup} "
