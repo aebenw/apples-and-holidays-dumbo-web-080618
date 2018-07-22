@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
     end
     
   end
- puts final_strstr 
+ puts final_str
 
 
 end
