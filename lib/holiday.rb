@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       supplies.each do |sup|
         if sup == supplies.last 
-          str << "#{sup}\n"
+          str << "#{sup}"
         else str << "#{sup}, "
         end
       end
