@@ -77,7 +77,7 @@ def all_supplies_in_holidays(holiday_hash)
     
   end
  str 
- p "Winter:"
+ puts "Winter:"
 end
 
 def all_holidays_with_bbq(holiday_hash)
