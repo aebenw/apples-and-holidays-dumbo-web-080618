@@ -74,6 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
         else final += "#{sup}, "
         end
       end
+      puts final
     end
     
   end
