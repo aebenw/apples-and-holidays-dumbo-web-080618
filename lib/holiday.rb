@@ -67,17 +67,17 @@ def all_supplies_in_holidays(holiday_hash)
             str << "#{word.capitalize!}"
           end
         end
-      final_str = "  #{str}: "
+      final = "  #{str}: "
       supplies.each do |sup|
         if sup == supplies.last 
-          final_str += "#{sup} "
-        else final_str += "#{sup}, "
+          final += "#{sup} "
+        else final += "#{sup}, "
         end
       end
     end
     
   end
- puts final_str
+ puts final
 
 
 end
