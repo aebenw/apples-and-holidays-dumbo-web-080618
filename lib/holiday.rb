@@ -61,9 +61,9 @@ def all_supplies_in_holidays(holiday_hash)
        new = hol.to_s.split("_")
        new.each do |word|
         if word == new[-1]
-          str << "#{word.capitalize!}: "
+          str << " #{word.capitalize!}: "
         else
-          str << " #{word.capitalize!} "
+          str << "#{word.capitalize!} "
         end
       end
       supplies.each do |sup|
