@@ -56,7 +56,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   str =""
   holiday_hash.each do |season, holiday|
-    str << "#{season.to_s.capitalize!}: " 
+    str << "#{season.to_s.capitalize!}:\n " 
      holiday.each do |hol, supplies|
        new = hol.to_s.split("_")
        new.each do |word|
@@ -69,14 +69,14 @@ def all_supplies_in_holidays(holiday_hash)
       end
       supplies.each do |sup|
         if sup == supplies.last 
-          str << "#{sup}"
+          str << "#{sup}\n"
         else str << "#{sup}, "
         end
       end
     end
     
   end
-p str 
+ str 
 end
 
 def all_holidays_with_bbq(holiday_hash)
